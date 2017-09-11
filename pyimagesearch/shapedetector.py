@@ -18,7 +18,7 @@ class ShapeDetector:
         """
         shape = "unidentified"
         perimeter = cv2.arcLength(contour, True)
-        approximation = cv2.approxPolyDP(contour, 0.04 * peri, True)
+        approximation = cv2.approxPolyDP(contour, 0.04 * perimeter, True)
 
         total_vertices = len(approximation)
 
